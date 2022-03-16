@@ -39,18 +39,28 @@
 
         <section class="index-promo">
             <h2 class="index-promo__title promo-title">Взгляните на жизнь иначе!</h2>
-            <img class="index-promo__img promo-img" src="" alt="">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="assets/img/handPhone-desktop.png">
+                <source media="(min-width: 768px)" srcset="assets/img/handPhone-tablet.png">
+                <img class="index-promo__img promo-img" src="assets/img/handPhone-mobile.png" alt="">
+            </picture>
             <a class=" index-promo__link promo-link"  href="">Скачать приложение</a>
 
             <ul class="index-promo__list app-list">
                 <li class="app-list__item">
-                    <a class="appl-list__link" href=""></a>
+                    <a class="appl-list__link" href="">
+                        <img src="assets/img/apple-logo.png" width="47" height="56" alt="Apple">
+                    </a>
                 </li>
                 <li class="app-list__item">
-                    <a class="appl-list__link" href=""></a>
+                    <a class="appl-list__link" href="">
+                        <img src="assets/img/android-logo.png" width="43" height="47" alt="Android">
+                    </a>
                 </li>
                 <li class="app-list__item">
-                    <a class="appl-list__link" href=""></a>
+                    <a class="appl-list__link" href="">
+                        <img src="assets/img/microsoft-logo.png" width="44" height="41" alt="Microsoft Windows">
+                    </a>
                 </li>
             </ul>
 
@@ -89,13 +99,13 @@
 
                 <ul class="information__picture picture-list">
                     <li class="picture-list__item picure-item">
-                        <img src="" alt="">
+                        <img src="assets/img/informationphone-destop--first.png" width="186" height="382" alt="">
                     </li>
                     <li class="picture-list__item picure-item">
-                        <img src="" alt="">
+                        <img src="assets/img/informationphone-desctop--second.png" width="186" height="382" alt="">
                     </li>
                     <li class="picture-list__item picure-item">
-                        <img src="" alt="">
+                        <img src="assets/img/informationphone-desktop--third.png" width="186" height="382" alt="">
                     </li>
                 </ul>
 
@@ -136,18 +146,161 @@
                 </ul>
 
                 <ul class="reviews-pip slider-pip">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="slider-pip__item slider-pip__item--active"></li>
+                    <li class="slider-pip__item"></li>
+                    <li class="slider-pip__item"></li>
                 </ul>
                 
             </div>
         </section>
 
 
-        <section class="price"></section>
+        <section class="price">
+            <div class="wrapper price-slider">
+
+                <table class="price-tablet tablet">
+                    <tr class="tablet-price price-str">
+                        <th class="price-col__first"></th>
+                        <th class="price-col__second">
+                            <div class="price-col__block">
+                                <p>База</p>
+                                <p>1,99 USD</p>
+                            </div>
+                        </th>
+                        <th class="price-col__third">
+                            <div class="price-col__block">
+                                <p>Стандарт</p>
+                                <p>3,99 USD</p>
+                            </div>
+                        </th>
+                        <th class="price-col__fourth">
+                            <div class="price-col__block">
+                                <p>Анлим</p>
+                                <p>9,99 USD</p>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr class="tablet-pink pink-str">
+                        <th class="pink-col__name">
+                            <p>Розовый фильтр</p>
+                        </th>
+                        <th class="pink-col__second">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                        <th class="pink-col__third">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                        <th class="pink-col__fourth">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                    </tr>
+
+                    <tr class="tablet-smile smile-str">
+                        <th class="smile-col__name">
+                            <p>Смайлики</p>
+                        </th>
+                        <th class="smile-col__second">
+                            <img src="assets/img/no.png" width="27" height="27" alt="Нет">
+                        </th>
+                        <th class="smile-col__third">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                        <th class="smile-col__fourth">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                    </tr>
+
+                    <tr class="tablet-comments comments-str">
+                        <th class="comments-col__name">
+                            <p>Комментарии</p>
+                        </th>
+                        <th class="comment-col__second">
+                            <img src="assets/img/no.png" width="27" height="27" alt="Нет">
+                        </th>
+                        <th class="comment-col__third">
+                            <img src="assets/img/no.png" width="27" height="27" alt="Нет">
+                        </th>
+                        <th class="comment-col__fourth">
+                            <img src="assets/img/yes.png" width="31" height="21" alt="Да">
+                        </th>
+                    </tr>
+                </table>
+
+                <ul class="price-pip slider-pip">
+                    <li class="slider-pip__item"></li>
+                    <li class="slider-pip__item slider-pip__item--active"></li>
+                    <li class="slider-pip__item"></li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section class="contacts">
+            <div class="wrapper contacts-wrapper">
+
+                <h3 class="contacts__title contacts-title">Остались вопросы?<br>Свяжитесь с нами!</h3>
+
+                <ul class="contacts__list contacts-list">
+                    <li class="contacts-list__item">
+                        <p class="contacts-text">Звоните:</p>
+                        <p class="contacts-info">+7 (812) 555-66-66</p>
+                    </li>
+                    <li class="contacts-list__item">
+                        <p class="contacts-text">Пишите:</p>
+                        <p class="contacts-info">mail@htmlacademy.ru</p>
+                    </li>
+                    <li class="contacts-list__item">
+                        <p class="contacts-text">Приезжайте в гости:</p>
+                        <p class="contacts-info">ул. Большая
+                            Конюшенная, 19/8</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
 
     </main>
+
+
+    <footer class="footer">
+        <div class="wrapper">
+
+            <a class="logo logo--footer" href="">
+                <img src="" alt="">
+            </a>
+
+            <ul class="social social-list">
+                <li class="social-item">
+                    <a class="social-link social-link--tw" href="">
+                        <img src="assets/img/social-tw.png" width="48" height="48" alt="логотип Twitter">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link social-link--fb" href="">
+                        <img src="assets/img/social-fb.png" width="48" height="48" alt="логотип facebook">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link social-link--youtube" href="">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                            <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="copyright">
+                <p class="copyright-text">Разработано</p>
+                <a class="copyright-link" href="">
+                    <img class="copyright-logo" src="assets/img/htmlacademy-logo.png" alt="логотип htmlacademy">
+                </a>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
